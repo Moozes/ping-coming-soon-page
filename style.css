@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+:root {
+    --Blue: hsl(223, 87%, 63%);
+
+    --Pale-Blue: hsl(223, 100%, 88%);
+    --Light-Red: hsl(354, 100%, 66%);
+
+    --Gray: hsl(0, 0%, 59%);
+    --Very-Dark-Blue: hsl(209, 33%, 12%);
+
+    --Font-size: 20px;
+
+    --padding-btn : 13px;
+    /* btn padding - 1 (which is the input's border width) */
+    --padding-input : 12px;
+    --radius : 20px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: var(--Font-size);
+    padding-top: 25px;
+}
+
+.container {
+    width : 40%;
+    margin : auto;
+}
+
+/* center Logo */
+.container div:nth-of-type(1) {
+    text-align: center;
+}
+
+.container div:nth-of-type(1) img {
+    width : 60px;
+}
+
+/* center all the text */
+.container p {
+    text-align: center;
+}
+
+.container form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap : 12px;
+    width : 100%;
+    position: relative;
+}
+
+.container form input {
+    flex-basis: 70%;
+    padding : var(--padding-input);
+    border: 1px solid var(--Pale-Blue);
+    border-radius: var(--radius);
+    color: var(--Pale-Blue);
+}
+
+.container form input.red {
+    border: 1px solid var(--Light-Red);
+}
+
+.container form input::placeholder {
+    color: var(--Pale-Blue);
+}
+
+.container form input:focus {
+    outline: none;
+}
+
+.container form button {
+    flex-basis: 30%;
+}
+
+.container form span.error-message {
+    display: none;
+    position: absolute;
+    bottom : -20px;
+    left: 20px;
+}
+
+.container form span.error-message.activate {
+    display: inline;
+}
+
+.container div:nth-of-type(2) img {
+    width : 100%;
+}
+
+/* center icons */
+.container .social-icons {
+    /* width : 100%; */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap : 10px;
+}
+
+.container .social-icons i {
+    /* margin-right: 10px; */
+    padding: 5px;
+    border-radius: 50%;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.container .social-icons i:hover {
+    color : white;
+    background: var(--Blue);
+}
+
+.big-font {
+    font-size: 30px;
+}
+.medium-font {
+    font-size: 16px;
+}
+.small-font {
+    font-size: 12px;
+}
+
+.font300 {
+    font-weight: 300;
+}
+.font600 {
+    font-weight: 600;
+}
+.font700 {
+    font-weight: 700;
+}
+
+.blue {
+    color : var(--Blue);
+}
+.pale-blue {
+    color : var(--Pale-Blue);
+}
+.light-red {
+    color : var(--Light-Red);
+}
+.gray {
+    color : var(--Gray);
+}
+.very-dark-blue {
+    color : var(--Very-Dark-Blue);
+}
+
+.btn-blue {
+    text-align: center;
+    color: white;
+    border: none;
+    border-style: none;
+    padding: var(--padding-btn);
+    border-radius: var(--radius);
+    background: var(--Blue);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.m-big {
+    margin-bottom : 20px;
+}
+.m-small {
+    margin-bottom: 8px;
+}
+
+
+@media(max-width : 375px) {
+    body {
+        padding-top : 10px;
+    }
+
+    .container {
+        width : 90%;
+    }
+
+    .container form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .container form input {
+        margin-bottom: 10px;
+    }
+
+    .container form span.error-message {
+        top : 45px;
+    }
+}

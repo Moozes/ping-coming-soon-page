@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Ping coming soon page</title>
+</head>
+<body>
+  <div class="container">
+    <div class="m-big">
+      <img src="images/logo.svg" alt="">
+    </div>
+    <p class="gray big-font m-small">
+      We are launching <span class="very-dark-blue font700">soon!</span>
+    </p>
+    <p class="very-dark-blue medium-font m-big">Subscribe and get notified</p>
+    <form class="m-big">
+      <input type="text" placeholder="Your Email Address" required>
+      <button id="formSubmit" class="btn-blue" type="submit">Notify Me</button>
+      <!-- if you give the submit button name="submit" or id="submit" it will override the form's submit function -->
+      <!-- and this.submit will give the error this.submit is not a function -->
+      <span class="error-message small-font light-red">Provide a valid email address</span>
+    </form>
+    <div class="m-big">
+      <img src="images/illustration-dashboard.png" alt="">
+    </div>
+    <div class="social-icons small-font m-small">
+      <i class="fab fa-facebook-f blue"></i>
+      <i class="fab fa-twitter blue"></i>
+      <i class="fab fa-instagram blue"></i>
+    </div>
+    <p class="gray small-font m-small">&copy; Copyright Ping. All rights reserved.</p>
+  </div>
+
+
+  
+
+  
+
+  <script src="main.js"></script>
+</body>
+</html>
